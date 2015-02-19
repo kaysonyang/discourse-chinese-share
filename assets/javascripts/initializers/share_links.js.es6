@@ -9,20 +9,10 @@ export default {
       id: 'weibo',
       iconClass: 'fa-weibo',
       generateUrl: function(link, title) {
-        return ("http://service.weibo.com/share/share.php?url=" + encodeURIComponent(link) + "&title=分享了来自 @码农圈 的话题【" + encodeURIComponent(title))+ "】&searchPic=true&style=number";
+        return ("http://service.weibo.com/share/share.php?url=" + encodeURIComponent(link) + "&title=分享了来自 @宁皓网 的话题【" + encodeURIComponent(title))+ "】&searchPic=true&style=number";
       },
       shouldOpenInPopup: true,
       popupHeight: 370
-    });
-
-    Sharing.addSource({
-      id: 'renren',
-      iconClass: 'fa-renren',
-      generateUrl: function(link, title) {
-        return ("http://widget.renren.com/dialog/share?resourceUrl=" + encodeURIComponent(link) + "&title=" + encodeURIComponent(title) + "&description=" + encodeURIComponent(title));
-      },
-      shouldOpenInPopup: true,
-      popupHeight: 628
     });
 
     Sharing.addSource({
